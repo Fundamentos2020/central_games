@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="contacto.css">
+    <script src="https://kit.fontawesome.com/628e679533.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href="index.html">Pagina de Inicio</a>
-    <h1>Pagina de contacto</h1>
+    <div id="div_encabezado" class="contenedor w-100" style="height: 100px; margin-bottom: 50px;">
+        <div class=" flotar-izquierda m-2 contenedor ">
+            <a href="index.html">
+                <img src="/Imagenes/logo_tienda.webp" width="100px" height="80px" alt="logo">
+            </a>
+        </div>
+
+        <div class="flotar-derecha m-3 contenedor">
+            <a title="Nosotros" class="m-3" href="acerca_de_nosotros.html"><i class="fas fa-handshake" style="font-size: 25px; color: white;"></i></a>
+            <a title="Contacto" class="m-3" href="contacto.html"><i class="fas fa-file-signature" style="font-size: 25px; color: white"></i></a>
+            <a title="Iniciar Sesion" class="m-3" href="iniciar_sesion.html"><i class="fas fa-id-card" style="font-size: 25px; color: white"></i></a>
+        </div>
+        
+        <div class="flex-all-center m-4" style="color: white;">
+            <h1 class="text-center contenedor">Central Games</h1>
+        </div>
+    </div>
+
+    <div class="container contenedor div_contacto"> <!--contenedor global-->
+        <div class="contacto_info text-center"> <!--datos central games-->
+            <div class="titulo_info text-center"> <!--titulo info-->
+                <h2>Informacion de <br> Contacto</h2>
+            </div>
+            <div class="fonts_titulo"> <!--informacion-->
+                <p><span><i class="fas fa-envelope-open-text" style="margin-right: 10px;"></i></span>contacto@gamecentral.com</p>
+                <p><span><i class="fas fa-mobile-alt" style="margin-right: 10px;"></i></span>01800123456789</p>
+            </div>
+        </div>
+
+        <form action="" class="form_contacto">
+            <h2>
+                Envia tu mensaje
+            </h2>
+            <div class="info_usuario">
+                <label for="names">Nombre *</label>
+                <input type="text" id="names">
+
+                <label for="telefono">Celular</label>
+                <input type="text" id="telefono">
+
+                <label for="correo">Correo *</label>
+                <input type="text" id="correo">
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" cols="10" rows="5" ></textarea>
+
+                <input type="button" name="Enviar" id="enviar_mensaje" value="Enviar Mensaje">
+            </div>
+        </form>
+    </div>
+
+    <div id="div_piepag" class="flex-row contenedor" style="width: 100%">
+        <!--Seccion 5 - Pie de página-->
+
+        <div class="col-s-3 contenedor" style="width: 33.3%;">
+            <ul>
+                <li class="m-3">
+                    <a href="acerca_de_nosotros.html">Acerca de Nosotros</a>
+                </li>
+                <li class="m-3">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li class="m-3">
+                    <a href="iniciar_sesion.html">Login</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="contenedor w-25 text-center"  style="width: 33.3%;">
+            <h4 style="color: black;">Redes Sociales</h4>
+            <!--Iconos de las redes sociales-->
+            <div>
+                <a title="twitter" id="twitter" href="https://twitter.com/Gameplanet_Mex?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter-square" style="font-size: 25px;"></i></a>
+                <a title="facebook" id="face" href="https://www.facebook.com/gameplanetmx/"><i class="fab fa-facebook" style="font-size: 25px;"></i></a>
+                <a title="instagram" id="insta" href="https://www.instagram.com/gameplanetcom/?hl=es-la"><i class="fab fa-instagram-square" style="font-size: 25px;"></i></a>
+                <a title="youtube" id="youtube" href="https://www.youtube.com/channel/UCGdcxBD1Ip93lxLnnrOjZ6A"><i class="fab fa-youtube" style="font-size: 25px;"></i></a>
+            </div>
+        </div>
+
+        <div class="contenedor"  style="width: 33.3%;">
+            <p style="color: black; font-style: italic;" class="text-center m-5">Todos los Derechos Reservados &copy;</p>
+        </div>
+    </div>  
+
 </body>
 </html>
